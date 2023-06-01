@@ -1,36 +1,35 @@
-import Link from 'next/link'
+import Image from 'next/image'
 import { Inter } from 'next/font/google'
+
+import profilePic from '../../public/images/me2.jpg'
+import FooterSection from '../sections/FooterSection'
 import styles from './page.module.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
+const Home = () => {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p className={styles.helloText}>
-          Hello, I&apos;m
-        </p>
-        <p className={styles.descriptionText}>Aashish Raj Gupta, a Front-End Developer</p>
-      </div>
+    <>
+      <main className={styles.main}>
+        <div className={styles.bodySection}>
+          <div className={styles.helloText}>
+            Hello, I&apos;m
+          </div>
 
-      <div className={styles.grid}>
-        <Link href={`/projects`}>
-          <div className={styles.card}>
-            <p>Projects</p>
+          <div className={styles.descriptionText}>
+            <p className={styles.nameText}>Aashish Raj Gupta</p>
+            <p>Front End Engineer with 3 yrs of work experience. I create responsive & scalable web apps 😃</p>
+            <p>Technologies - Javascript, React.js, Next.js, Node, Html, Css, Bootstrap, Shopify, BigCommerce</p>
           </div>
-        </Link>
-        <Link href={`/resume`}>
-          <div className={styles.card}>
-            <p>Resume</p>
+
+          <div className={styles.profileImage}>
+            <Image src={profilePic} width={250} alt='Profile picture of Aashish Raj Gupta'/>
           </div>
-        </Link>
-        <Link href={`/contact`}>
-          <div className={styles.card}>
-            <p>Contact</p>
-          </div>
-        </Link>
-      </div>
-    </main>
+        </div>
+      </main>
+      <FooterSection />
+    </>
   )
 }
+
+export default Home

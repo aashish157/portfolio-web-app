@@ -1,93 +1,52 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 6rem;
   min-height: 100vh;
 }
 
-.description {
+.bodySection {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center; 
-}
-
-.description p {
-  position: relative;
-  margin: 0;
-  padding: 1rem;
-  background-color: rgba(var(--callout-rgb), 0.5);
+  align-items: center;
+  row-gap: 50px;
 }
 
 .helloText {
   font-size: 70px;
   font-weight: 200;
-  max-width: var(--max-width);
-  width: 100%;
+  width: 300px;
+  text-align: center;
   z-index: 2;
   border: 1px solid rgba(var(--callout-border-rgb), 0.3);
   border-radius: var(--border-radius);
 }
 
 .descriptionText {
-  font-size: 20px;
-  font-weight: 300;
-  max-width: var(--max-width);
-  width: 100%;
-  z-index: 2;
+  font-size: 18px;
+  font-weight: 200;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(33%, auto));
-  width: var(--max-width);
-  max-width: 100%;
-}
-
-.card {
-  padding: 1rem 1.2rem;
-  border-radius: var(--border-radius);
-  background: rgba(var(--card-rgb), 0);
-  border: 1px solid rgba(var(--card-border-rgb), 0);
-  transition: background 200ms, border 200ms;
-}
-
-.card p {
-  font-weight: 300;
+.nameText {
   font-size: 30px;
-  margin-top: 0.7rem;
-  margin-bottom: 0.7rem;
+  font-weight: 300;
+  width: 250px;
+  height: auto;
   text-align: center;
+  padding-bottom: 20px;
 }
 
-/* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
-  .card:hover {
-    background: rgba(var(--card-rgb), 0.1);
-    border: 1px solid rgba(var(--card-border-rgb), 0.15);
-  }
+.profileImage > img {
+  border-radius: 50%;
 }
 
 /* Mobile and Tablet */
 @media (max-width: 1023px) {
   .content {
     padding: 4rem;
-  }
-
-  .grid {
-    grid-template-columns: 1fr;
-    margin-bottom: 120px;
-    max-width: 320px;
-    text-align: center;
-  }
-
-  .card {
-    padding: 1rem 2.5rem;
-  }
-
-  .description {
-    font-size: 0.8rem;
   }
 }

@@ -1,0 +1,12 @@
+.footerSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: black;
+  background-color: white;
+  height: 40px; 
+  width: 100vw;
+  position: fixed;
+  bottom: 0px;
+}
