@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 import profilePic from '../../../public/images/me.jpg'
 import FooterSection from '../../sections/FooterSection'
-import styles from './page.module.css'
+import styles from './styles.module.css'
 
 const ContactPage = () => {
     return (
