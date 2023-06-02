@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
 .main {
   display: flex;
   flex-direction: column;
@@ -23,21 +25,107 @@
   border-radius: var(--border-radius);
 }
 
-.descriptionText {
-  font-size: 18px;
-  font-weight: 200;
+.description {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .nameText {
-  font-size: 30px;
+  font-size: 50px;
   font-weight: 300;
-  width: 250px;
+  font-family: 'Caveat', cursive;
+  width: auto;
   height: auto;
   text-align: center;
   padding-bottom: 20px;
+  color: #00FFFF;
+}
+
+.descriptionText {
+  color: #f5fefd;
+  font-size: 18px;
+  font-weight: 200;
+  text-align: center;
+}
+
+.technologies {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 20px;
+}
+
+.javascriptText {
+  color: black;
+  background-color: #F0DB4F;
+  font-weight: 300;
+  padding: 4px;
+  margin: 0 2px;
+}
+
+.reactText {
+  color: black;
+  background-color: #61dbfb;
+  font-weight: 300;
+  padding: 4px;
+  margin: 0 2px;
+}
+
+.nextText {
+  color: black;
+  background-color: white;
+  font-weight: 300;
+  padding: 4px;
+  margin: 0 2px;
+}
+
+.nodeText {
+  color: white;
+  background-color: #3c873a;
+  font-weight: 300;
+  padding: 4px;
+  margin: 0 2px;
+}
+
+.htmlText {
+  color: white;
+  background-color: #e34c26;
+  font-weight: 300;
+  padding: 4px;
+  margin: 0 2px;
+}
+
+.cssText {
+  color: white;
+  background-color: #2965f1;
+  font-weight: 300;
+  padding: 4px;
+  margin: 0 2px;
+}
+
+.bootstrapText {
+  color: white;
+  background-color: #563d7c;
+  font-weight: 300;
+  padding: 4px;
+  margin: 0 2px;
+}
+
+.shopifyText {
+  color: white;
+  background-color: #95BF47;
+  font-weight: 300;
+  padding: 4px;
+  margin: 0 2px;
+}
+
+.bigCommerceText {
+  color: black;
+  background-color: white;
+  font-weight: 300;
+  padding: 4px;
+  margin: 0 2px;
 }
 
 .profileImage > img {
