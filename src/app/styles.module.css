@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@font-face {
+  font-family: 'Caveat-Medium';
+  src: url('../static/fonts/Caveat-Medium.ttf') format('truetype');
+}
+
 
 .bodySection {
   display: flex;
@@ -22,7 +26,7 @@
 .nameText {
   font-size: 50px;
   font-weight: 300;
-  font-family: 'Caveat', cursive;
+  font-family: 'Caveat-Medium', cursive;
   width: auto;
   height: auto;
   text-align: center;
