@@ -1,8 +1,4 @@
-@font-face {
-  font-family: 'Caveat-Medium';
-  src: url('../static/fonts/Caveat-Medium.ttf') format('truetype');
-}
-
+@import url('../static/styles/fonts.css');
 
 .bodySection {
   display: flex;
@@ -16,7 +12,7 @@
 .helloText {
   font-size: 50px;
   font-weight: 200;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Geologica-Medium', sans-serif;
   color: white;
   width: 300px;
   text-align: center;
@@ -55,7 +51,7 @@
   color: #f5fefd;
   font-size: 18px;
   font-weight: 200;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Geologica-ExtraLight', sans-serif;
   text-align: center;
 }
 
@@ -67,7 +63,7 @@
 .technologies > span {
   font-size: 15px;
   font-weight: normal;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Geologica-ExtraLight', sans-serif;
   padding: 10px;
   display: inline-block;
   margin: 2px 2px !important;
