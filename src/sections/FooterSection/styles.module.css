@@ -17,5 +17,6 @@
   .footerSection {
     font-size: 15px;
     gap: 15px;
+    top: 0px;
   }
 }
