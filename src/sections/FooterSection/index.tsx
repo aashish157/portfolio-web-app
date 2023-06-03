@@ -11,7 +11,7 @@ const Footer = () => {
       <Link href={`/projects`}>
         Projects
       </Link>
-      <Link href='https://drive.google.com/file/d/1I4dqb4O2t5JNrs73zyZEANe6kRjg572a/view?usp=sharing' target='_blank' rel='noreferrer'>
+      <Link href='https://drive.google.com/file/d/1I4dqb4O2t5JNrs73zyZEANe6kRjg572a/view?usp=sharing' target='_parent' rel='noreferrer'>
         Résumé
       </Link>
       <Link href={`/contact`}>
