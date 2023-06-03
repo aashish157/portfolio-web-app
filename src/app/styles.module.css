@@ -1,34 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 
-.main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-}
-
 .bodySection {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   row-gap: 50px;
+  min-height: 100vh;
 }
 
 .helloText {
-  font-size: 70px;
+  font-size: 50px;
   font-weight: 200;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   width: 300px;
   text-align: center;
   z-index: 2;
-  border: 1px solid rgba(var(--callout-border-rgb), 0.3);
-  border-radius: var(--border-radius);
-}
-
-.description {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .nameText {
@@ -38,30 +25,61 @@
   width: auto;
   height: auto;
   text-align: center;
-  padding-bottom: 20px;
   color: #00FFFF;
+}
+
+.profileImage {
+  width: 200px;
+  height: 200px;
+}
+
+.profileImage > img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 50%;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .descriptionText {
   color: #f5fefd;
   font-size: 18px;
   font-weight: 200;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
 }
 
 .technologies {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  row-gap: 20px;
+  min-height: 50px;
+  width: auto;
+}
+
+.technologies > span {
+  font-size: 15px;
+  font-weight: normal;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 10px;
+  display: inline-block;
+  margin: 2px 2px !important;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+.technologies > span:hover {
+  font-size: 20px;
+  padding: 10px;
+  margin: 0 4px;
+  cursor: pointer;
 }
 
 .javascriptText {
   color: black;
   background-color: #F0DB4F;
-  font-weight: 300;
-  padding: 4px;
-  margin: 0 2px;
 }
 
 .reactText {
@@ -90,7 +108,7 @@
 
 .htmlText {
   color: white;
-  background-color: #e34c26;
+  background-color: #f06529;
   font-weight: 300;
   padding: 4px;
   margin: 0 2px;
@@ -128,13 +146,54 @@
   margin: 0 2px;
 }
 
-.profileImage > img {
-  border-radius: 50%;
-}
-
 /* Mobile and Tablet */
 @media (max-width: 1023px) {
   .content {
     padding: 4rem;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  .bodySection {
+    row-gap: 40px;
+  }
+
+  .helloText {
+    font-size: 30px;
+  }
+
+  .nameText {
+    font-size: 30px;
+  }
+
+  .profileImage {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .description {
+    padding: 0 20px;
+  }
+
+  .descriptionText {
+    font-size: 14px;
+  }
+
+  .technologies {
+    text-align: center;
+    height: 100px;
+  }
+
+  .technologies > span {
+    font-size: 12px;
+    padding: 7px;
+    margin: 0 1px;
+  }
+  
+  .technologies > span:hover {
+    font-size: 15px;
+    padding: 7px;
+    margin: 0 2px;
   }
 }

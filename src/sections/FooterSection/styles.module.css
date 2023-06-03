@@ -1,12 +1,21 @@
 .footerSection {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: black;
   background-color: white;
   height: 40px; 
   width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
   position: fixed;
   bottom: 0px;
+}
+
+@media (max-width: 768px) {
+  .footerSection {
+    font-size: 15px;
+    gap: 10px;
+  }
 }
