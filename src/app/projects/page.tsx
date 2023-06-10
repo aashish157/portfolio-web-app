@@ -1,9 +1,12 @@
+import { PROJECTS } from '../../static/lib/mocks/project-listings'
+import ProjectListingsSection from '@/sections/ProjectListingsSection';
 import FooterSection from '../../sections/FooterSection'
 
 const ProjectsPage = () => {
     return (
         <>
-            <div>List of projects :</div>
+            {/* <div>Hello</div> */}
+            <ProjectListingsSection projectList={PROJECTS} />
             <FooterSection />
         </>
     )

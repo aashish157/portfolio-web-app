@@ -1,0 +1,12 @@
+.projectCard {
+  /* border: 0.5px solid #00FFFF; */
+  width: 80vw;
+  height: 200px;
+  /* border-radius: 20px; */
+  padding: 10px;
+  background-color: #171717;
+}
+
+.projectCard > img {
+  /* border-radius: 20px; */
+}
