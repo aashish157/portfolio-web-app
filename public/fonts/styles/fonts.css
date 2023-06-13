@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'Caveat-Medium';
+  src: url('../Caveat-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Geologica-Medium';
+  src: url('../Geologica-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Geologica-ExtraLight';
+  src: url('../Geologica-ExtraLight.ttf') format('truetype');
+}
