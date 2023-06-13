@@ -1,7 +1,7 @@
 import './globals.css'
 
 export const metadata = {
-  title: 'Portfolio',
+  title: 'Portfolio | Aashish Raj Gupta',
   description: 'Portfolio web app of Aashish Raj Gupta',
 }
 

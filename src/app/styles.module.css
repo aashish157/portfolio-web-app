@@ -1,4 +1,4 @@
-@import url('../static/styles/fonts.css');
+@import url('../../public/fonts/styles/fonts.css');
 
 .bodySection {
   display: flex;
