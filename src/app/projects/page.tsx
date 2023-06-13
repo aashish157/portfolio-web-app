@@ -1,15 +1,13 @@
-import { PROJECTS } from '../../static/lib/mocks/project-listings'
+import { PROJECTS } from '../../static/lib/mocks/project-listings';
 import ProjectListingsSection from '@/sections/ProjectListingsSection';
-import FooterSection from '../../sections/FooterSection'
 
 const ProjectsPage = () => {
-    return (
-        <>
-            {/* <div>Hello</div> */}
-            <ProjectListingsSection projectList={PROJECTS} />
-            <FooterSection />
-        </>
-    )
-}
+  return (
+    <>
+      {/* <div>Hello</div> */}
+      <ProjectListingsSection projectList={PROJECTS} />
+    </>
+  );
+};
 
 export default ProjectsPage;

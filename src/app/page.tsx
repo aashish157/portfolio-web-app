@@ -1,24 +1,24 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
+import Image from 'next/image';
+import { Inter } from 'next/font/google';
 
-import profilePic from '../../public/images/me2.jpg'
-import FooterSection from '../sections/FooterSection'
-import styles from './styles.module.css'
+import profilePic from '../../public/images/me2.jpg';
+import FooterSection from '../sections/FooterSection';
+import styles from './styles.module.css';
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'] });
 
 const Home = () => {
   return (
     <>
       <div className={styles.bodySection}>
         <div className={styles.helloText}>
-        Hello, I&apos;m
+          Hello, I&apos;m
         </div>
         
         <div className={styles.nameText}>Aashish Raj Gupta</div>
 
         <div className={styles.profileImage}>
-          <Image src={profilePic} alt='Profile picture of Aashish Raj Gupta' priority/>
+          <Image src={profilePic} alt='Profile picture of Aashish Raj Gupta' priority />
         </div>
         
         <div className={styles.description}>
@@ -37,12 +37,10 @@ const Home = () => {
             <span className={styles.bigCommerceText}> BigCommerce </span>
           </div>     
         </div>
-        
-        
       </div>
       <FooterSection />
     </>
-    )
-  }
-  
-  export default Home
+  );
+};
+
+export default Home;

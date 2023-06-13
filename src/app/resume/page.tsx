@@ -1,12 +1,9 @@
-import FooterSection from '../../sections/FooterSection'
-
 const ResumePage = () => {
-    return (
-        <>
-            <div>here&apos;s my resume </div>
-            <FooterSection />
-        </>
-    )
-}
+  return (
+    <>
+      <div>here&apos;s my resume</div>
+    </>
+  );
+};
 
 export default ResumePage;
