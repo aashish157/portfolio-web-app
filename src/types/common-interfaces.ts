@@ -3,4 +3,5 @@ export interface IProject {
   projectLink: string;
   description: string;
   repositoryLink?: string;
+  image: string;
 }

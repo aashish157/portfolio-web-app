@@ -1,12 +1,59 @@
+@import url('../../../public/fonts/styles/fonts.css');
+
 .projectCard {
-  /* border: 0.5px solid #00FFFF; */
   width: 80vw;
-  height: 200px;
-  /* border-radius: 20px; */
+  min-height: 200px;
   padding: 10px;
   background-color: #171717;
+  display: flex;
+  flex-direction: row;
+  border-radius: 20px;
+}
+
+.projectCard:hover{
+  border: 0.5px solid #f5fefd;
 }
 
 .projectCard > img {
-  /* border-radius: 20px; */
+  border-radius: 10px;
+}
+
+.projectDescription {
+  padding: 0 20px;
+  font-family: 'Geologica-ExtraLight', sans-serif;
+}
+
+.projectDescription > h4 {
+  font-family: 'Geologica-Medium', sans-serif;
+  color: #f5fefd;
+}
+
+.projectDescription > p {
+  font-size: 15px;
+  color: grey;
+}
+
+.projectDescription > a {
+  font-size: 15px;
+  color: aqua;
+}
+
+@media (max-width: 768px) {
+  .projectCard {
+    flex-direction: column;
+  }
+  .projectCard:hover{
+    border: none;
+  }
+  .projectCard > img {
+    width: 70vw;
+    height: auto;
+    padding: auto;
+  }
+  .projectDescription {
+    padding-left: 0;
+  }
+  .projectDescription > p {
+    font-size: 14px;
+  }
 }
