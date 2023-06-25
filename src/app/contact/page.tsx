@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import profilePic from '../../../public/images/me.jpg';
+import profilePic from '../../../public/images/me.png';
 import styles from './styles.module.css';
 
 const ContactPage = () => {
