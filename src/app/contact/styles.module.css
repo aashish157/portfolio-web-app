@@ -1,61 +1,41 @@
-@media screen and (min-width: 768px) {
-    .gridContainer {
-        display: grid;
-        column-gap: 50px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
+@import url('../../../public/fonts/styles/fonts.css');
 
-    .profileImage {
-        grid-column-start: 1;
-        grid-column-end: 2;
-    }
-
-    .contactDetails {
-        color: white;
-        grid-column-start: 2;
-        grid-column-end: 3;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        gap: 40px;
-    }
+.container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	min-width: 100vw;
+	min-height: 100vh;
 }
 
-.profileImage > img {
-    width: 300px;
-    height: auto;
+.profilePic {
+	width: 300px;
+	height: auto;
+	border-radius: 10px;
 }
 
-.socialAccountsList {
-    list-style-type: none;
+.contactInfo {
+	color: white;
+	font-family: 'Geologica-ExtraLight', sans-serif;
+	font-size: 20px;
+	padding: 0 20px;
 }
 
-.linkedin {
-
+.contactInfo a {
+	color: aquamarine;
 }
 
-.instagram {
-
-}
-
-.github {
-
-}
-
-@media screen and (max-width: 768px) {
-    .gridContainer {
-        display: grid;
-        row-gap: 50px;
-    }
-
-    .profileImage {
-        grid-row: 1;
-    }
-    
-    .contactDetails {
-        grid-row: 2;
-    }
+@media (max-width: 768px) {
+	.container {
+		flex-direction: column;
+	}
+	.profilePic {
+		width: 250px;
+		height: auto;
+	}
+	.contactInfo {
+		font-size: 15px;
+		padding: 20px 0;
+	}
 }

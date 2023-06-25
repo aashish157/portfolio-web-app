@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 import profilePic from '../../../public/images/me.jpg';
 import styles from './styles.module.css';
@@ -6,26 +7,19 @@ import styles from './styles.module.css';
 const ContactPage = () => {
   return (
     <>
-      <div className={styles.gridContainer}>
-        <div className={styles.profileImage}>
-          <Image src={profilePic} alt='Picture of Aashish Raj Gupta' priority />
-        </div>
-        <div className={styles.contactDetails}>
-          <p>Find me on</p>
-          <ul className={styles.socialAccountsList}>
-            <li>
-              <span className={styles.linkedin}>LinkedIn @ </span>
-              <a href='https://www.linkedin.com/in/aashish157/'>linkedin.com/in/aashish157</a>
-            </li>
-            <li>
-              <span className={styles.instagram}>Instagram Blog @ </span>
-              <a href='https://www.instagram.com/marketscool/'>instagram.com/marketscool</a>
-            </li>
-            <li>
-              <span className={styles.github}>GitHub @ </span>
-              <a href='https://github.com/aashish157'>github.com/aashish157</a>
-            </li>
-          </ul>
+      <div className={styles.container}>
+        <Image className={styles.profilePic} src={profilePic} alt='Picture of Aashish'></Image>
+        <div className={styles.contactInfo}>
+          Find me on 
+          <div style={{paddingTop: '20px'}}>LinkedIn : 
+            <Link href="https://www.linkedin.com/in/aashish157/" target='_blank' rel='noopener noreferrer'> linkedin.com/in/aashish157</Link>
+          </div>
+          <div>Instagram : 
+            <Link href="https://www.instagram.com/_aashishraj/" target='_blank' rel='noopener noreferrer'> instagram.com/_aashishraj/</Link>
+          </div>
+          <div>GitHub : 
+            <Link href="https://github.com/aashish157" target='_blank' rel='noopener noreferrer'> github.com/aashish157</Link>
+          </div>
         </div>
       </div>
     </>

@@ -4,7 +4,6 @@ import ProjectListingsSection from '@/sections/ProjectListingsSection';
 const ProjectsPage = () => {
   return (
     <>
-      {/* <div>Hello</div> */}
       <ProjectListingsSection projectList={PROJECTS} />
     </>
   );
